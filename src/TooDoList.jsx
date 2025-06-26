@@ -27,7 +27,7 @@ export default function TooDoList(){
 
     return(
         <div id="principal">
-            <h1>Lista</h1>
+            <h1>LISTA</h1>
             <div id="secundaria">
                 <input type="text" value={nova_tarefa} onChange={(e)=>setNova_tarefa(e.target.value)}/>
                 <button onClick={adicionar_tarefa}>Adicionar Tarefa</button>
@@ -48,7 +48,7 @@ export default function TooDoList(){
                                 )
                             }
                         />
-                        {tarefa.texto}
+                        <span className={tarefa.concluida ? "concluida" : ""}>{tarefa.texto}</span>
                         <button onClick={()=>remover_tarefa(tarefa.id)}>Remover</button>
                     </li>
                 ))}
