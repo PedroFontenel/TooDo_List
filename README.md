@@ -1,12 +1,31 @@
-# React + Vite
+# TooDo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Criando uma aplicação de React simples que permite ao usuário adicionar, remover e marcar tarefas como concluídas.
 
-Currently, two official plugins are available:
+Componente Principal (App.jsx ou TodoList.jsx):
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este componente deve gerenciar uma lista de tarefas (strings ou objetos com id, texto e concluida) em seu estado.
 
-## Expanding the ESLint configuration
+Deve haver um campo de entrada de texto (<input type="text" />) para o usuário digitar uma nova tarefa.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Um botão "Adicionar Tarefa" deve permitir que o texto do input seja adicionado à lista de tarefas no estado.
+
+A lista de tarefas deve ser renderizada abaixo, onde cada tarefa é um item.
+
+Renderização da Lista de Tarefas:
+
+Para cada tarefa na lista, exiba o texto da tarefa.
+
+Ao lado de cada tarefa, adicione um botão "Remover" que, quando clicado, remova aquela tarefa específica do estado.
+
+Adicione também uma checkbox ao lado de cada tarefa. Quando a checkbox é marcada/desmarcada, a tarefa deve ser atualizada no estado para refletir seu status de concluida (true/false).
+
+O texto da tarefa deve ser tachado (text-decoration: line-through;) se estiver marcada como concluída.
+
+Gerenciamento de Estado:
+
+Utilize o Hook useState para gerenciar a lista de tarefas.
+
+Utilize o Hook useState para gerenciar o valor do campo de entrada de nova tarefa (tornando-o um formulário controlado).
+
+Lembre-se da imutabilidade do estado: ao adicionar, remover ou atualizar uma tarefa, você deve criar uma nova array ou objeto para o estado, em vez de modificar diretamente o estado existente.
