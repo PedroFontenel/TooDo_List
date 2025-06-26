@@ -48,7 +48,7 @@ export default function TooDoList(){
                                 )
                             }
                         />
-                        <span className={tarefa.concluida ? "concluida" : ""}>{tarefa.texto}</span>
+                        <span className={tarefa.concluida ? "concluida" : "normal"}>{tarefa.texto}</span>
                         <button onClick={()=>remover_tarefa(tarefa.id)}>Remover</button>
                     </li>
                 ))}

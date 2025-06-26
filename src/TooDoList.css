@@ -53,6 +53,7 @@ body {
   cursor: pointer;
   width: 100%;
   margin-left: 0;
+  justify-content: center;
 }
 
 #secundaria button:hover {
@@ -78,15 +79,19 @@ li input[type="checkbox"] {
 
 li button {
   padding: 6px 10px;
-  background-color: #e53935;
-  color: #fff;
+  background-color: #b65353;
+  color: #000000;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 li button:hover {
-  background-color: #c62828;
+  background-color: #ff0000;
+}
+
+.normal{
+    color: #1565c0;
 }
 
 .concluida {
