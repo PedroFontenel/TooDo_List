@@ -53,7 +53,7 @@ body {
   cursor: pointer;
   width: 100%;
   margin-left: 0;
-  justify-content: center;
+  align-self: center;
 }
 
 #secundaria button:hover {
