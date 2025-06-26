@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 #principal {
@@ -14,6 +15,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 450px;
+  box-sizing: border-box;
 }
 
 #principal h1 {
@@ -26,6 +28,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #secundaria input[type="text"] {
@@ -33,6 +37,8 @@ body {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%;
+  margin-left: 0;
 }
 
 #secundaria button {
@@ -43,6 +49,8 @@ body {
   border-radius: 4px;
   margin-left: 10px;
   cursor: pointer;
+  width: 100%;
+  margin-left: 0;
 }
 
 #secundaria button:hover {
@@ -77,6 +85,22 @@ li button {
 
 li button:hover {
   background-color: #c62828;
+}
+
+@media (min-width: 600px) {
+  #secundaria {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  #secundaria input[type="text"] {
+    width: 70%;
+  }
+
+  #secundaria button {
+    width: auto;
+    margin-left: 10px;
+  }
 }
 
 
